@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kicks</title>
+    <link rel="icon" href="./images/logo.jpg">
+    <link rel="stylesheet" href="../kicks/css.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header1">
+                <div class="logo">
+                    <img src="../kicks/images/logo.jpg" height="200px" width="200px" alt="logo">
+                </div>
+                <div class="title">
+                    <h1>HOUSE OF KICKS</h1>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="../kicks/homepage.php">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <shop>
+        <div class="cont">
+            <div class="header3">
+                <h1>Shop Sneakers</h1>
+            </div>
+            <div class="shop">
+                <div class="shop-container">
+                    <div class="card" onclick="openPopup('Nike Dunk Low Retro','Rs.9,599', '../kicks/images/sneakers/nikedunklow.png')">
+                        <img src="../kicks/images/sneakers/nikedunklow.png" alt="Nike Dunk Low Retro">
+                        <h3>Nike Dunk Low Retro</h3>
+                        <p>Rs.9,599</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Yeezy Foamrunners','Rs.6,899', '../kicks/images/sneakers/foamrunners.jpg')">
+                        <img src="../kicks/images/sneakers/foamrunners.jpg" alt="Yeezy Foamrunners">
+                        <h3>Yeezy Foamrunners</h3>
+                        <p>Rs.6,699</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Travis Scott Jordan 1','Rs.22,499', '../kicks/images/sneakers/travis.jpg')">
+                        <img src="../kicks/images/sneakers/travis.jpg" alt="Travis Scott Jordan 1">
+                        <h3>Travis Scott Jordan 1</h3>
+                        <p>Rs.22,499</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Air Force 1s','Rs.6,999', '../kicks/images/sneakers/airforce.jpg')">
+                        <img src="../kicks/images/sneakers/airforce.jpg" alt="Air Force 1s">
+                        <h3>Air Force 1's</h3>
+                        <p>Rs.6,999</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Converse Off White','Rs.19,899', '../kicks/images/sneakers/converse.jpg')">
+                        <img src="../kicks/images/sneakers/converse.jpg" alt="Converse Off White">
+                        <h3>Converse x Off White</h3>
+                        <p>Rs.19,899</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Travis Scott Jordan 1 Low','Rs.16,599', '../kicks/images/sneakers/travis.jpg')">
+                        <img src="../kicks/images/sneakers/travislow.jpg" alt="Travis Scott Jordan 1 Low">
+                        <h3>Travis Scott Jordan 1 Low</h3>
+                        <p>Rs.16,599</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Adidas Samba','Rs.8,499', '../kicks/images/sneakers/adidas.jpeg')">
+                        <img src="../kicks/images/sneakers/adidas.jpeg" alt="Adidas Samba">
+                        <h3>Adidas Samba</h3>
+                        <p>Rs.8,499</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Yeezy Red Octobers','Rs.24,699', '../kicks/images/sneakers/Nike-Air-Yeezy-II-Red-October.jpg')">
+                        <img src="../kicks/images/sneakers/Nike-Air-Yeezy-II-Red-October.jpg" alt="Red Octobers">
+                        <h3>Yeezy Red Octobers</h3>
+                        <p>Rs.24,699</p>
+                    </div>
+                    <div class="card" onclick="openPopup('Adidas Samba Green','Rs.8,499', '../kicks/images/sneakers/greenadidas.jpg')">
+                        <img src="../kicks/images/sneakers/greenadidas.jpg" alt="Adidas Samba Green">
+                        <h3>Adidas Samba Green</h3>
+                        <p>Rs.8,499</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </shop>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Product Image">
+            <h2 id="popup-title"></h2>
+            <p id="popup-price"></p>
+            <button class="btn"><a href="#">Checkout</a></button>
+
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Follow us</h3>
+                <div class="socials">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="copy">
+            COPYRIGHTS &COPY; ALL RIGHTS RESERVED TO HOUSE OF KICKS &TRADE;
+        </div>
+    </footer> 
+    <script src="shop.js"></script>  
+</body>
+</html>
